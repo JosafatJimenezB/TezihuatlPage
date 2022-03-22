@@ -313,7 +313,7 @@ header .nav-bar{
   position: absolute;
   content: '';
   display: block;
-  width: 60%;
+  width: 50%;
   height: 90%;
   background: linear-gradient(#49E499, #DEEEFE);
   clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%);
