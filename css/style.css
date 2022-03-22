@@ -313,7 +313,7 @@ header .nav-bar{
   margin-top: 40px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: base-line;
   justify-content: center;
   flex-wrap: wrap;
 }
