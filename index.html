@@ -1,49 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Tezihuatl Holistic Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tezihuatl Holistic Center</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./assets/ 2.png" alt="Logo" class="logo-img">  
-        </div>
-        <nav>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#Testimonios">Testimonios</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-            <li><a href="#login">Login</a></li>
-        </nav>
-    </header>
-    <section>
-        <article class="landing-page">
-            <img src="./assets/landing.png" alt="Landing page" >
-            <div class="presentation">
-                <h2 id="title">Salud Mental, Espiritual <br>y Corporal</h2>
-                <p id="info">Masajes Holisticos</p>
-                <a id="boton-agendar" href="#login">Agendar una Cita</a>
-            </div>    
-        </article>
-        <section>
-            <article class="servicios">
-                <h2>Servicios</h2>
-                <div class="holistica">
-                    <img src="./assets/landing.png" alt="Masajes Holisticos">
-                    <h3>Masajes Holisticos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    <br>Asperiores culpa voluptatum ad deserunt voluptas non <br> 
-                    repudiandae magni nam distinctio? Iusto sequi amet <br>
-                    enim recusandae autem porro facere et perspiciatis atque?</p>
-                </div>
 
-            </article>
-        </section>
-    </section>
+       <!---------header de la pagina-------->
+  <header>
+    <div class="nav-bar">
+      <img src="./images/Tezihuatl 2.png" alt="logo" class="logo">
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="#"><i class="uil uil-home"></i>Home</a>
+          <a href="#"><i class="uil uil-bag"></i>Servicios</a>
+          <a href="#"><i class="uil uil-head-side-cough"></i>Testimonios</a>
+          <a href="#"><i class="uil uil-comment-exclamation"></i>Nosotros</a>
+          <a href="#"><i class="uil uil-message"></i>Contacto</a>
+          <a href="#"><i class="uil uil-signin"></i>Login</a>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>
+    </div>
+  </header>
+
+    <!----------Home de la pagina----------->
+
+  <section class="home">
+
+    <div class="media-icons">
+      <a href="#"><i class="uil uil-facebook-f"></i></a>
+      <a href="#"><i class="uil uil-instagram"></i></a>
+      <a href="#"><i class="uil uil-twitter"></i></a>
+    </div>
+
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/masajes.jpg" alt="">
+          <div class="text-content">
+            <h1 class="title">Salud Mental, espiritual <br> y corporal</h1>
+            <p>Masajes Holisticos</p>
+            <button class="read-btn">Agendar una cita <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="./images/bg2.jpg" alt="">
+          <div class="text-content">
+            <h1 class="title">Salud Mental, espiritual <br> y corporal</h1>
+            <p>Limpias Espirituales</p>
+            <button class="read-btn">Agendar una cita <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="./images/bg3.jpg" alt="">
+          <div class="text-content">
+            <h1 class="title">Salud Mental, espiritual <br> y corporal</h1>
+            <p>Herbolaria</p>
+            <button class="read-btn">Agendar una cita <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </div>
+
+    <div class="bg-slider-thumbs">
+      <div class="swiper-wrapper thumbs-container">
+        <img src="./images/masajes.jpg" class="swiper-slide" alt="">
+        <img src="./images/bg2.jpg" class="swiper-slide" alt="">
+        <img src="./images/bg3.jpg" class="swiper-slide" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --------seccion de los servicios------- -->
+
+  <section class="services section">
+    <h2>Nuestros servicios</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut voluptate at consequuntur veniam suscipit dolores quia maxime, enim molestiae cumque neque doloribus quos non velit. Labore dolore officia aliquid.</p>
+  </section>
+
+
+  <!-- scripts -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
