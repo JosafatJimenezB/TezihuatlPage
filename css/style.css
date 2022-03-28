@@ -418,11 +418,16 @@ header .nav-bar{
 .terapeuta{
   padding-top: 80px;
 }
+
 .foto-terapeuta{
   width: 600px;
   height: auto;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+}
+
+.p-terapeuta{
+  margin-bottom: 30px;
 }
 
 
@@ -615,6 +620,7 @@ header .nav-bar{
   .nosotros-container{
     align-items: center;
     justify-content: center;
+    padding: 20px;
   }
 
   .nosotros-derecha{
@@ -627,7 +633,15 @@ header .nav-bar{
     text-align: center;
   }
 
+  .nosotros-container img{
+    width: 300px;
+  }
+
   .nosotros-derecha h3::after{
+    width: 100%;
+  }
+
+  .foto-terapeuta{
     width: 100%;
   }
 
