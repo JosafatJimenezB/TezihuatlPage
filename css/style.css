@@ -92,6 +92,7 @@ header.sticky img{
 }
 
 header .nav-bar{
+  z-index: 999;
   position: relative;
   width: 100%;
   display: flex;
@@ -364,11 +365,67 @@ header .nav-bar{
 
 /*======= nosotros section =======*/
 
+
 .nosotros h2{
   font-size: 3em;
   font-weight: 600;
   text-align: center;
+  position: relative;
 }
+
+.nosotros-container{
+  margin: 80px 0px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.nosotros-container img{
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.nosotros-derecha{
+  align-items: center;
+  justify-content: space-between;
+}
+.nosotros-derecha h3{
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.nosotros-derecha h3::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #aaa;
+  margin-bottom: 40px;
+}
+
+.nosotros-container p{
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+/* ------sobre el terapeuta------- */
+.terapeuta{
+  padding-top: 80px;
+}
+.foto-terapeuta{
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+
 
 
 /*======= Media queries (max-width: 1100px) =======*/
@@ -398,6 +455,27 @@ header .nav-bar{
   /* =========services seccion========= */
   .card{
     width: 45%;
+  }
+
+  /* =========nosotros seccion========= */
+
+  .nosotros-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nosotros-derecha{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nosotros-derecha h3{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .nosotros-derecha h3::after{
+    width: 100%;
   }
 }
 
@@ -529,6 +607,28 @@ header .nav-bar{
 
   .services::before{
     display: none;
+  }
+
+  /* =======seccion de nosotros========= */
+
+
+  .nosotros-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nosotros-derecha{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nosotros-derecha h3{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .nosotros-derecha h3::after{
+    width: 100%;
   }
 
 }
