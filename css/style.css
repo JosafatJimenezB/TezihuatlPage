@@ -320,8 +320,10 @@ header .nav-bar{
   width: 50%;
   height: 90%;
   background: linear-gradient(#49E499, #DEEEFE);
-  clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%);
-}
+  /* clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%); */
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+ }
 
 .services h2{
   position: relative;
@@ -455,16 +457,17 @@ header .nav-bar{
 .reseñas-slide{
   box-sizing: border-box;
   display: flex;
-  padding: 20px 150px;
+  padding: 30px 200px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .reseñas-slide img{
   border-radius: 30px;
-  width: 400px;
-  height: 400px;
-  margin-right: 30px;
-  margin-bottom: 40px;
+  width: 200px;
+  height: 200px;
+  box-shadow: var(--box-shadow);
 }
 
 .text-slide{
@@ -556,8 +559,6 @@ header .nav-bar{
     align-items: center;
     margin: auto;
     padding: 0;
-    width: 300px;
-    height: 300px;
   }
   
   .text-slide{
