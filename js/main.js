@@ -31,56 +31,65 @@ var swiper = new Swiper(".bg-slider-thumbs", {
   ScrollReveal().reveal('.nav-bar',{
     duration: 3000,
     origin: 'bottom',
-    distance: '-100px'
+    distance: '-100px',
+    mobile: false
   });
 
   ScrollReveal().reveal('.title-section',{
     duration: 3000,
     origin: 'bottom',
-    distance: '-400px'
+    distance: '-400px',
+    mobile: false
   });
   
     ScrollReveal().reveal('.card',{
       duration: 3000,
       origin: 'left',
-      distance: '400px'
+      distance: '400px',
+      mobile: false
     });
 
     ScrollReveal().reveal('.nosotros-derecha',{
       duration: 3000,
       origin: 'left',
-      distance: '-400px'
+      distance: '-400px',
+      mobile: false
     });
 
     ScrollReveal().reveal('.nosotros-container',{
       duration: 3000,
       origin: 'left',
-      distance: '-400px'
+      distance: '-400px',
+      mobile: false
     });
 
     ScrollReveal().reveal('.reseñas-swiper',{
       duration: 3000,
       origin: 'top',
-      distance: '-400px'
+      distance: '-400px',
+      mobile: false
     });
 
 
     ScrollReveal().reveal('.container-contacto',{
       duration: 3000,
       origin: 'left',
-      distance: '-400px'
+      distance: '-400px',
+      mobile: false
     });
 
     ScrollReveal().reveal('.mapa-contacto',{
       duration: 3000,
       origin: 'bottom',
-      distance: '-400px'
+      distance: '-400px',
+      mobile: false
     });
     
     ScrollReveal().reveal('.container-footer',{
       duration: 3000,
       origin: 'top',
-      distance: '400px'
+      distance: '400px',
+      mobile: false
     });
 
 
