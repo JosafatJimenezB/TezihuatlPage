@@ -15,15 +15,15 @@
        <!---------header de la pagina-------->
   <header>
     <div class="nav-bar">
-      <img src="./images/Tezihuatl 2.png" alt="logo" class="logo">
+      <img src="./images/logo.png" alt="logo" class="logo">
       <div class="navigation">
         <div class="nav-items">
           <i class="uil uil-times nav-close-btn"></i>
-          <a href="#"><i class="uil uil-home"></i>Home</a>
+          <a href="/"><i class="uil uil-home"></i>Home</a>
           <a href="#services"><i class="uil uil-bag"></i>Servicios</a>
-          <a href="#"><i class="uil uil-head-side-cough"></i>Testimonios</a>
+          <a href="#testimonios"><i class="uil uil-head-side-cough"></i>Testimonios</a>
           <a href="#nosotros"><i class="uil uil-comment-exclamation"></i>Nosotros</a>
-          <a href="#"><i class="uil uil-message"></i>Contacto</a>
+          <a href="#contacto"><i class="uil uil-message"></i>Contacto</a>
           <a href="#"><i class="uil uil-signin"></i>Login</a>
         </div>
       </div>
@@ -131,7 +131,7 @@
   </section>
 
 
-  <section class="reseñas" id="reseñas">                
+  <section class="reseñas" id="testimonios">                
     <div class="swiper reseñas-swiper mySwiper">
       <h2>Lo que piensan nuestros clientes</h2>
       <div class="swiper-wrapper contenedor-reseñas">
@@ -158,7 +158,7 @@
         <div class="reseñas-slide swiper-slide">
           <img src="./images/rostro3.jpg" alt="">
           <div class="text-slide">
-            <h3>Mi reseña1</h3>
+            <h3>Juana Reyes</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Labore explicabo odit veritatis provident aliquam dolor dolorem. 
               Eaque asperiores aperiam enim porro molestias. Ut alias expedita 
@@ -171,12 +171,93 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
+
+
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+
+    <div class="container-contacto">
+      <div class="formulario-contacto">
+        <form action="https://formspree.io/f/xqkndbjd"
+        method="POST">
+  
+          <label for="name">Nombre:</label>
+          <input type="name" name="name" required>
+  
+          <label for="number">Numero de contacto:</label>
+          <input type="name" name="number" maxlength="10" required>
+            
+          <label for="email">Correo:</label>
+          <input type="email" name="email" required>
+          
+          <label for="message">Mensaje:</label>
+          <textarea name="message"></textarea required>
+          <button type="submit" onclick="alerta()">Send</button>
+        </form>
+      </div>
+      <div class="mapa-contacto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.3674878939896!2d-98.13349428509858!3d19.09152778707892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6be119a48e541337!2zMTnCsDA1JzI5LjUiTiA5OMKwMDcnNTIuNyJX!5e0!3m2!1ses!2smx!4v1648578803068!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-footer">
+      <div class="col-info">
+        <img src="./images/logo.png" alt="">
+        <p>Trabajamos con honestidad y respeto <br>
+        generando conciencia con amor, llevándolos a <br>
+      la sanación con terapias alternativas.</p>
+      <p>&copy; Tezihuatl Holistic Center 2022. All rights reserved.</p>
+      </div>
+      <div class="col-nav">
+        <a href="/">Home</a>
+        <a href="#services">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="col-especialidaes">
+        <h3>Especialidad</h3>
+        <div class="container-especialidades">
+          <div class="col-interna-1">
+            <p>
+              Masoterapia<br>
+              Quiropráctico<br>
+              Descontracturante<br>
+              Deportivo<br>
+              Prenatal<br>
+              Maderoterapia<br>
+              Piedras Calientes
+            </p>
+          </div>
+          <div class="col-interna-2">
+            <p>
+              Reductivo<br>
+              Sueco<br>
+              Con rebozo<br>
+              Linfático<br>
+              De silla<br>
+              Cupping therapy<br>
+              Moxibustion
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="creador">
+      <h3>Made with <span>❤</span> by <a href="https://github.com/JosafatJimenezB" target="__blank">Josafat Jimenez</a></h3>
+    </div>
+  </footer>
   
 
   </main>
 
   <!-- scripts -->
   <script src="./js/swiper-bundle.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

@@ -65,3 +65,19 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+
+/--------Alerta de envio--------/ 
+
+
+function alerta() {
+  Swal.fire({
+    icon: 'success',
+    title: '¡Gracias por contactarnos!',
+    showConfirmButton: false,
+    timer: 1500
+  })
+}
+
