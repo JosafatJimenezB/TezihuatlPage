@@ -24,6 +24,68 @@ var swiper = new Swiper(".bg-slider-thumbs", {
       swiper: swiper,
     },
   });
+
+  /==========Efectos al hace scroll(body)============/
+  // Window.sr = ScrollReveal();
+  
+  ScrollReveal().reveal('.nav-bar',{
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+  });
+
+  ScrollReveal().reveal('.title-section',{
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-400px'
+  });
+  
+    ScrollReveal().reveal('.card',{
+      duration: 3000,
+      origin: 'left',
+      distance: '400px'
+    });
+
+    ScrollReveal().reveal('.nosotros-derecha',{
+      duration: 3000,
+      origin: 'left',
+      distance: '-400px'
+    });
+
+    ScrollReveal().reveal('.nosotros-container',{
+      duration: 3000,
+      origin: 'left',
+      distance: '-400px'
+    });
+
+    ScrollReveal().reveal('.reseñas-swiper',{
+      duration: 3000,
+      origin: 'top',
+      distance: '-400px'
+    });
+
+
+    ScrollReveal().reveal('.container-contacto',{
+      duration: 3000,
+      origin: 'left',
+      distance: '-400px'
+    });
+
+    ScrollReveal().reveal('.mapa-contacto',{
+      duration: 3000,
+      origin: 'bottom',
+      distance: '-400px'
+    });
+    
+    ScrollReveal().reveal('.container-footer',{
+      duration: 3000,
+      origin: 'top',
+      distance: '400px'
+    });
+
+
+
+
 //Navigation bar effects on scroll
 
 document.addEventListener("scroll", function(){
