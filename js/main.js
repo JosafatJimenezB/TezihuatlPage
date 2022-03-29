@@ -49,6 +49,7 @@ closeBtn.addEventListener("click", () =>{
 
 
 var swiper = new Swiper(".mySwiper", {
+  loop: true,
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
