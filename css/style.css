@@ -313,17 +313,17 @@ header .nav-bar{
   /* background-color: var(--body-bg-color); */
 }
 
-.services::before{
+/* .services::before{
   position: absolute;
   content: '';
   display: block;
   width: 50%;
   height: 90%;
   background: linear-gradient(#49E499, #DEEEFE);
-  /* clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%); */
+  clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
- }
+ } */
 
 .services h2{
   position: relative;
@@ -349,15 +349,21 @@ header .nav-bar{
   width: 20%;
   height: 600px;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 10px;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   z-index: 888;
+  overflow: hidden;
+  transition:all 0.3s ease;
 }
 
 .card img{
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  /* border-radius: 10px; */
+}
+
+.card:hover{
+  box-shadow: var(--box-shadow);
 }
 
 .card p{
@@ -504,6 +510,7 @@ header .nav-bar{
   align-items: center;
   padding: 20px;
   margin : 50px 0;
+  box-sizing: border-box;
 }
 
 .contacto h2{
@@ -577,6 +584,8 @@ footer{
   height: auto;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
   background: linear-gradient(#49E499, #5A98F2);
 }
 
@@ -586,6 +595,8 @@ footer{
   align-items: initial;
   justify-content: space-around;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 
@@ -613,6 +624,7 @@ footer{
 }
 
 .creador{
+  overflow: hidden;
   text-align: center;
   font-size: 0.9em;
 }
