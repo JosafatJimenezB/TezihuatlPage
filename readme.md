@@ -6,7 +6,7 @@ Aqui te muestro mi proyecto de ingenieria de software, el cual consiste en una p
 
 Ademas de que contendra un admin dashboard en el cual se podran agregar todas las cosas que se necesiten, como citas, usuarios, etc. (en construcción)
 
-## Diseño del website :landscape:
+## Diseño del website :framed_picture:
 
 ![](./Views/view.jpg)
 [Diseño UI](./Views/tezihuatl%20UI%20Definitiva.pdf)
