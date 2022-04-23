@@ -337,18 +337,6 @@ header .nav-bar{
   /* background-color: var(--body-bg-color); */
 }
 
-/* .services::before{
-  position: absolute;
-  content: '';
-  display: block;
-  width: 50%;
-  height: 90%;
-  background: linear-gradient(#49E499, #DEEEFE);
-  clip-path: polygon(78% 22%, 64% 26%, 42% 41%, 26% 40%, 0% 35%, 0% 71%, 13% 83%, 25% 90%, 40% 95%, 60% 95%, 74% 90%, 86% 79%, 99% 60%, 100% 44%, 94% 29%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
- } */
- 
 .container p{
   margin-bottom: 30px;
 }
@@ -431,107 +419,52 @@ header .nav-bar{
 
 .nosotros-container p{
   font-size: 1.1em;
+  text-align: justify;
 }
 
 /* =========Seccion de los comentarios========== */
 
-.reseñas{
-  align-items: center;
-  justify-content: center;
-  margin: 60px 0 50px 0;
-}
-
-.reseñas h2{
-  color: var(--white-color);
-  text-shadow: var(--box-shadow);
+.container h2{
   font-size: 3em;
+  font-weight: bold;
   text-align: center;
-  margin: 30px 0 40px 0;
+  margin-bottom: 30px;
 }
 
-.reseñas-swiper{
-  width: 70%;
-  height: auto;
-  background: linear-gradient(#49E499, #5A98F2);
-  border-radius: 30px;
-  margin: 280px auto;
+.testimonial-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 30px 15px;
+  position: relative;
 }
 
-.reseñas-slide{
-  box-sizing: border-box;
-  display: flex;
-  padding: 30px 200px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+.container a{
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 13px;
+  background-color: #49E499;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
-
-.reseñas-slide img{
-  border-radius: 30px;
-  width: 200px;
-  height: 200px;
-  box-shadow: var(--box-shadow);
-  border: none;
-}
-
-.text-slide{
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.text-slide h3{
-  font-size: 2em;
-  display: inline-block;
-}
-
-.text-slide h3::after{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--dark-color);
-}
-
-.text-slide p{
-  width: 500px;
-} 
-
 
 /* =============Seccion de contacto============ */
-
-.contacto{
-  align-items: center;
-  padding: 20px;
-  margin : 50px 0;
-  box-sizing: border-box;
-}
-
-.contacto h2{
-  text-align: center;
-  font-size: 3em;
-  margin-bottom: 50px;
-}
 
 .container-contacto{
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .formulario-contacto {
-  width: 30%;
+  width: 100%;
 }
 
 .formulario-contacto form{
   width: 100%;
-  display: flex;
   padding: 20px;
   flex-direction: column;
   border-radius: 30px;
@@ -689,34 +622,6 @@ footer{
 
   .nosotros-derecha h3::after{
     width: 100%;
-  }
-
-  /* ========seccion de las reseñas========= */
-  
-  .reseñas-swiper h2{
-    font-size: 2.5em;
-  }
-
-  .reseñas-slide img{
-    align-items: center;
-    margin: auto;
-    padding: 0;
-  }
-  
-  .text-slide{
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-
-  .text-slide h3{
-    margin: 30px 0;
-    font-size: 1.5em;
-  }
-
-  .text-slide p{
-    margin-bottom: 20px;
   }
 
   /* ---------footer---------- */
@@ -893,42 +798,13 @@ footer{
 
 
   /* =========seccion de las reseñas========== */
-  .reseñas{
-    align-items: center;
-    justify-content: center;
-    margin: 60px 0 40px 0;
-  }
-  
-  .reseñas h2{
+  .container h2{
     font-size: 2em;
-    text-align: center;
-    margin: 30px 0 40px 0;
   }
   
-  .reseñas-swiper{
-    width: 90%;
-    height: auto;
-    margin: auto;
-  }
-  
-  .reseñas-slide{
-    padding: 20px 0px;
-    flex-wrap: wrap;
-  }
-  
-  .reseñas-slide img{
-    border-radius: 30px;
-    width: 200px;
-  }
-  
-  .text-slide h3{
-    font-size: 1.5em;
-    display: inline-block;
-  }
-  
-  .text-slide p{
-    width: auto;
-    padding: 20px;
+  .testimonial-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 10px;
   }
 
 
@@ -1021,5 +897,31 @@ footer{
 
   .nosotros-derecha h3::after{
     width: 100%;
+  }
+
+  /* ------------ Seccion de los testimonios -------------- */
+
+  .container h2{
+    font-size: 2em;
+  }
+  
+  .testimonial-container{
+    grid-template-columns: 1fr;
+    padding: 30px 15px;
+  }
+
+  .container a{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* ---------- Seccion de contacto ----------- */
+  .container-contacto{
+    padding: 30px 15px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
