@@ -25,6 +25,19 @@ var swiper = new Swiper(".bg-slider-thumbs", {
     },
   });
 
+/----------------- Boton de subir -------------/ 
+
+const btnSubir = document.querySelector('.btn-subir');
+
+function stickyBtnSubir(){
+  btnSubir.classList.toggle('scrolled', window.pageYOffset > 400);
+}
+
+stickyBtnSubir();
+
+window.addEventListener('scroll', stickyBtnSubir);
+  
+
   /==========Efectos al hace scroll(body)============/
   // Window.sr = ScrollReveal();
   
@@ -184,27 +197,3 @@ btn.addEventListener('click', (e) => {
     )
   );
 });
-
-
-// Email.send({
-//   Host : "smtp.yourisp.com",
-//   Username : "username",
-//   Password : "password",
-//   To : 'them@website.com',
-//   From : "you@isp.com",
-//   Subject : "This is the subject",
-//   Body : "And this is the body"
-// }).then(
-// message => alerta(message)
-// );
-
-
-// function loader(){
-//   document.querySelector('.loader-container').classList.add('fade-out');
-// }
-
-// function fadeOut(){
-//   setInterval(loader, 3000);
-// }
-
-// window.onload = fadeOut();
