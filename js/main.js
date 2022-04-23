@@ -165,6 +165,9 @@ btn.addEventListener('click', (e) => {
 
     var body = 'nombre: '+name +'<br> Numero: '+ number + '<br> Correo: '+ email + '<br> Mensaje: '+ message;
 
+    // secureToken: "5b8f8f8f-d8e0-4f7f-b8f8-f8f8f8f8f8f8";
+  // el secure token es para encriptar el mensaje
+
     Email.send({
       Host : "smtp.gmail.com",
       Username : "tezihuatlholisticcenter@gmail.com",
@@ -174,12 +177,11 @@ btn.addEventListener('click', (e) => {
       Subject : "This is the subject",
       Body : body
   }).then(
-    message => Swal.fire({
-      icon: 'success',
-      title: '¡Gracias por contactarnos!',
-      showConfirmButton: false,
-      timer: 1500
-    })
+    message => Swal.fire(
+      'Gracias!',
+      'Hemos recibido tu mensaje!',
+      'success'
+    )
   );
 });
 
