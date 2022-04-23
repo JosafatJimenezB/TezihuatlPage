@@ -422,6 +422,22 @@ header .nav-bar{
   text-align: justify;
 }
 
+.especialidades{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.3rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.list-check{
+  color: #49E499;
+}
+
+.nosotros-container span{
+  font-size: 1.1em;
+}
+
 /* =========Seccion de los comentarios========== */
 
 .container h2{
