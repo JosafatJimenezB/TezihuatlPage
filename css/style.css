@@ -526,54 +526,50 @@ header .nav-bar{
 
 /* ==========Seccion del footer=========== */
 footer{
-  padding: 20px 100px;
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
-  overflow: hidden;
   background: linear-gradient(#49E499, #5A98F2);
 }
 
-
-.container-footer{
-  display: flex;
-  align-items: initial;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  overflow: hidden;
+.container-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 30px 15px;
+  max-width: 1200px;
+  margin: auto;
 }
 
+.col-info{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.col-info img{
+  width: 130px;
+  margin: auto;
+}
 
 .col-nav{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  row-gap: 0.3rem;
+  text-align: center;
 }
 
 .col-nav a{
-  text-decoration: none;
-}
-
-.col-especialidades{
   margin: 0;
-}
-
-.container-especialidades{
-  width: 100%;
-  display: flex;
-}
-
-.col-interna-1{
-  margin-right: 20px;
+  padding: 0;
+  text-decoration: none;
+  color: #3b5378;
 }
 
 .creador{
-  overflow: hidden;
+  width: 100%;
   text-align: center;
-  font-size: 0.9em;
 }
 
 .creador span{
@@ -581,7 +577,7 @@ footer{
 }
 
 .creador a{
-  color:black;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -844,41 +840,13 @@ footer{
   }
 
   /* ========footer======== */
-  footer{
-    padding: 20px;
-    height: auto;
-  }
-
-  .col-info, .col-nav{
+  .container-grid{
+    grid-template-columns: 1fr;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.8em;
-    width: 100%;
-  }
-
-  .col-nav{
-    margin: 30px 0;
-    font-size: 1em;
   }
 
   .col-especialidades{
-    font-size: 1em;
-  }
-
-  .container-footer{
-    display: flex;
-    flex-wrap: column;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  .creador{
-    margin-top: 20px;
-    font-size: 0.9em;
-    border-top: 2px solid var(--dark-color);
-    padding-top: 10px;
+    text-align: center;
   }
 
 }
@@ -941,4 +909,32 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  /* --------- Secciond el footer ----------- */
+  .container-grid{
+    grid-template-columns: 1fr;
+    text-align: justify;
+    margin: none;
+    padding: none;
+  }
+
+  .col-info{
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+
+  .col-nav{
+    font-size: 0.8rem;
+  }
+
+  .col-especialidades{
+    text-align: initial;
+    font-size: 0.8rem;
+  }
+
+
+  .creador{
+    font-size: 0.9rem;
+  }
+
 }
