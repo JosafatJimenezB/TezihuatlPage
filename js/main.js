@@ -154,6 +154,36 @@ function alerta() {
 
 
 /-------------correo------------/ 
+const btn = document.getElementById('btn');
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var number = document.getElementById('number').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var body = 'nombre: '+name +'<br> Numero: '+ number + '<br> Correo: '+ email + '<br> Mensaje: '+ message;
+
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "tezihuatlholisticcenter@gmail.com",
+      Password : "nemsqbketsllmnph",
+      To : 'tezihuatlholisticcenter@gmail.com',
+      From : email,
+      Subject : "This is the subject",
+      Body : body
+  }).then(
+    message => Swal.fire({
+      icon: 'success',
+      title: '¡Gracias por contactarnos!',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  );
+});
+
+
 // Email.send({
 //   Host : "smtp.yourisp.com",
 //   Username : "username",
