@@ -140,6 +140,20 @@
     .container{
         grid-template-columns: 1fr;
     }
+
+    .welcome{
+        height: 300px;
+    }
+
+    .form{
+        height: 300px;
+        padding: 0 0 30px 0;
+    }
+
+    .form-container{
+        top: 0;
+        height: 100%;
+    }
 }
 
 
@@ -150,13 +164,13 @@
         left: 20px;
     }
 
-    .container{
+    /* .container{
         grid-template-columns: 1fr;
     }
 
     .welcome{
         height: 300px;
-    }
+    } */
 
     .form{
         height: 300px;
@@ -167,6 +181,28 @@
         top: 0;
         height: 100%;
     }
+}
+
+
+
+@media screen and (max-width: 500px){
+    .login a{
+        color: #000;
+    }
+
+    .welcome{
+        display: none;
+    }
+
+    .form{
+        height: 100vh;
+    }
+
+    .form-container{
+        width: auto;
+        top: 200px;
+        height: 100%;
+    }    
 }
 
 
