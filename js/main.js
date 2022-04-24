@@ -25,7 +25,8 @@ var swiper = new Swiper(".bg-slider-thumbs", {
     },
   });
 
-/----------------- Boton de subir -------------/ 
+
+//  Boton de subir 
 
 const btnSubir = document.querySelector('.btn-subir');
 
@@ -197,3 +198,28 @@ btn.addEventListener('click', (e) => {
     )
   );
 });
+
+
+
+
+if(screen.width < 500){
+  console.log('hola');
+}
+
+else if(screen.width > 500){
+  console.log('esta bien');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
