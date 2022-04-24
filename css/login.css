@@ -44,7 +44,6 @@
 }
 
 .welcome{
-    width: 800px;
     padding: 30px;
     background: url('../images/fondo-login.jpg') rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
@@ -55,7 +54,7 @@
 }
 
 .text{
-    max-width: 600px;
+    max-height: 600px;
     color: #fff;
 }
 
@@ -78,31 +77,51 @@
 
 
 .form{
-    padding: 30px 50px;
+    position: relative;
     background: #fff;
+    padding: 30px 50px;
 }
 
-.form form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    font-weight: bold;
+.form-container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    width: 400px;
+    box-sizing: border-box;
 }
+
+.form-container h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* --------------- Secciones del formulario --------------- */
+
+.form-container form label{
+    margin: 0;
+    padding: 0;
+}
+
 
 #user, 
 #password{
-    width: 50%;
+    width: 100%;
     color: #000;
+    margin: none;
     outline: none; 
     padding: 3px 10px;
     border: none;
     border-bottom: 2px solid #000;
+    margin-bottom: 20px;
 }
 
 .btn-send{
-    width: 100px;
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
     background-color: #49E499;
     outline: none;
     cursor: pointer;
@@ -113,6 +132,43 @@
 .btn-send:hover{
     background-color: #3cbb7e;
 }
+
+
+/* Diseño responsive */
+
+@media screen and (max-width: 920px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 820px){
+
+    .login a{
+        top: 20px;
+        left: 20px;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .welcome{
+        height: 300px;
+    }
+
+    .form{
+        height: 300px;
+        padding: 0;
+    }
+
+    .form-container{
+        top: 0;
+        height: 100%;
+    }
+}
+
 
 
 
