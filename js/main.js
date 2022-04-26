@@ -22,6 +22,7 @@ var swiper = new Swiper(".bg-slider-thumbs", {
   });
 
 
+
 //  Boton de subir 
 
 const btnSubir = document.querySelector('.btn-subir');
@@ -57,43 +58,7 @@ closeBtn.addEventListener("click", () =>{
 });
 
 
-
-
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  spaceBetween: 0,
-  centeredSlides: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
-
-
-/--------Alerta de envio--------/ 
-
-
-function alerta() {
-  Swal.fire({
-    icon: 'success',
-    title: '¡Gracias por contactarnos!',
-    showConfirmButton: false,
-    timer: 1500
-  })
-}
-
-
-/-------------correo------------/ 
+//   Correo 
 const btn = document.getElementById('btn');
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -128,24 +93,33 @@ btn.addEventListener('click', (e) => {
 
 
 
-if(screen.width < 500){
-  console.log('hola');
-}
+// Scroll reveal solo para el desktop
 
-else if(screen.width > 500){
-  console.log('esta bien');
-}
+let sr = ScrollReveal({
+  duration: 1500,
+  distance: "60px",
+});
 
+sr.reveal('.card', {
+  delay: 600,
+  mobile: false
+});
 
+sr.reveal('.formulario-contacto', {
+  origin: 'top', 
+  delay: 700,
+  mobile: false
+});
 
+sr.reveal('.nosotros-container, .mapa-contacto', {
+  origin: 'bottom', 
+  delay: 700,
+  mobile: false
+});
 
-
-
-
-
-
-
-
-
-
+sr.reveal('.testimonial-card', {
+  origin: 'left',
+  delay: 600,
+  mobile: false
+});
 
