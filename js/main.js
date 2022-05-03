@@ -1,3 +1,19 @@
+
+
+// loader
+function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
+
+
+
+
 //Swiper slider
 var swiper = new Swiper(".bg-slider-thumbs", {
   loop: true,
