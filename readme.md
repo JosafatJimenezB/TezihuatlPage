@@ -8,6 +8,8 @@ Ademas de que contendra un admin dashboard en el cual se podran agregar todas la
 
 ## Diseño del website :framed_picture:
 
+---
+
 ![](./Views/view.jpg)
 [Diseño UI](./Views/tezihuatl%20UI%20Definitiva.pdf)
 
@@ -18,6 +20,8 @@ Ademas de que contendra un admin dashboard en el cual se podran agregar todas la
 <br> -->
 
 ## Despliegue :rocket:
+
+---
 
 El sitio web se encuentra desplegado en dos hosting, uno en github pages con un dominio personal y otro en un servidor de hosting gratuito; se pueden apreciar a continuacion.
 
@@ -30,5 +34,17 @@ El sitio web se encuentra desplegado en dos hosting, uno en github pages con un 
 [Ver despliegue](http://www.tezihuatlcenter.ml/)
 
 <br>
+
+## License
+
+---
+
+Tu puedes usar este codigo para realizar tu propia web en base a las siguientes condiciones.
+
+- No puedes usar las imagenes que se muestran, ademas de el nombre y logo de la pagina
+
+- Debes agregar un link a mi repositorio en github
+
+---
 
 ###### Made with :heart: by Josafat Jimenez :mexico:
