@@ -25,9 +25,9 @@ Ademas de que contendra un admin dashboard en el cual se podran agregar todas la
 
 El sitio web se encuentra desplegado en dos hosting, uno en github pages con un dominio personal y otro en un servidor de hosting gratuito; se pueden apreciar a continuacion.
 
-#### Despliegue en Github Pages
+#### Despliegue en Netlify
 
-[Ver despliegue](josafatjdev.works/TezihuatlPage)
+[Ver despliegue](https://admirable-basbousa-5b8685.netlify.app/#)
 
 #### Despliegue en Hosting
 
