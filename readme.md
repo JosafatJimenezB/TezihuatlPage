@@ -33,7 +33,13 @@ El sitio web se encuentra desplegado en dos hosting, uno en github pages con un 
 
 [Ver despliegue](http://www.tezihuatlcenter.ml/)
 
-<br>
+## Backend para el dashboard :desktop_computer:
+
+---
+
+Para la seccion del backend se encuentra en otro repositorio, el cual se encuentra en el siguiente link:
+
+[soy el link al repo](https://github.com/JosafatJimenezB/Tezihuatl_Backend)
 
 ## License
 
@@ -45,6 +51,6 @@ Tu puedes usar este codigo para realizar tu propia web en base a las siguientes 
 
 - Debes agregar un link a mi repositorio en github
 
----
+<br>
 
 ###### Made with :heart: by Josafat Jimenez :mexico:
