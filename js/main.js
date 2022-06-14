@@ -76,36 +76,36 @@ closeBtn.addEventListener("click", () => {
 
 
 //   Correo 
-const btn = document.getElementById('btn');
-btn.addEventListener('click', (e) => {
-  e.preventDefault();
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', (e) => {
+//   e.preventDefault();
 
-  var name = document.getElementById('name').value;
-  var number = document.getElementById('number').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+//   var name = document.getElementById('name').value;
+//   var number = document.getElementById('number').value;
+//   var email = document.getElementById('email').value;
+//   var message = document.getElementById('message').value;
 
-  var body = 'nombre: ' + name + '<br> Numero: ' + number + '<br> Correo: ' + email + '<br> Mensaje: ' + message;
+//   var body = 'nombre: ' + name + '<br> Numero: ' + number + '<br> Correo: ' + email + '<br> Mensaje: ' + message;
 
-  // secureToken: "5b8f8f8f-d8e0-4f7f-b8f8-f8f8f8f8f8f8";
-  // el secure token es para encriptar el mensaje
+//   // secureToken: "5b8f8f8f-d8e0-4f7f-b8f8-f8f8f8f8f8f8";
+//   // el secure token es para encriptar el mensaje
 
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "tezihuatlholisticcenter@gmail.com",
-    Password: "nemsqbketsllmnph",
-    To: 'tezihuatlholisticcenter@gmail.com',
-    From: email,
-    Subject: "This is the subject",
-    Body: body
-  }).then(
-    message => Swal.fire(
-      'Gracias!',
-      'Hemos recibido tu mensaje!',
-      'success'
-    )
-  );
-});
+//   Email.send({
+//     Host: "smtp.gmail.com",
+//     Username: "josa221001@gmail.com",
+//     Password: "hutzzbihuaoyanll",
+//     To: 'josa221001@gmail.com',
+//     From: email,
+//     Subject: "This is the subject",
+//     Body: body
+//   }).then(
+//     message => Swal.fire(
+//       'Gracias!',
+//       'Hemos recibido tu mensaje!',
+//       'success'
+//     )
+//   );
+// });
 
 
 
@@ -129,7 +129,7 @@ sr.reveal('.formulario-contacto', {
 });
 
 sr.reveal('.nosotros-container, .mapa-contacto', {
-  origin: 'bottom',
+  origin: 'top',
   delay: 700,
   mobile: false
 });
