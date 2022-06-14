@@ -12,6 +12,41 @@ function fadeOut(){
 window.onload = fadeOut();
 
 
+// enviar correo con smptjs
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', function(e) {
+//   e.preventDefault();
+
+//   var name = document.getElementById('name').value;
+//   var number = document.getElementById('number').value;
+//   var email = document.getElementById('email').value;
+//   var message = document.getElementById('message').value;
+
+//   var body = 'nombre: ' + name + '<br> Numero: ' + number + '<br> Correo: ' + email + '<br> Mensaje: ' + message;
+
+//   // secureToken: "5b8f8f8f-d8e0-4f7f-b8f8-f8f8f8f8f8f8";
+//   // el secure token es para encriptar el mensaje
+
+//   console.log(body)
+
+//   Email.send({
+//     Host: "smtp.gmail.com",
+//     Username: "tezihuatlholisticcenter@gmail.com",
+//     Password: "kigevotunkipagzf",
+//     To: 'tezihuatlholisticcenter@gmail.com',
+//     From: email,
+//     Subject: "This is the subject",
+//     Body: body
+//   }).then(
+//     message => Swal.fire(
+//       'Gracias!',
+//       'Hemos recibido tu mensaje!',
+//       'success'
+//     )
+//   );
+// });
+
+
 
 
 //Swiper slider
@@ -73,39 +108,6 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
-
-
-//   Correo 
-// const btn = document.getElementById('btn');
-// btn.addEventListener('click', (e) => {
-//   e.preventDefault();
-
-//   var name = document.getElementById('name').value;
-//   var number = document.getElementById('number').value;
-//   var email = document.getElementById('email').value;
-//   var message = document.getElementById('message').value;
-
-//   var body = 'nombre: ' + name + '<br> Numero: ' + number + '<br> Correo: ' + email + '<br> Mensaje: ' + message;
-
-//   // secureToken: "5b8f8f8f-d8e0-4f7f-b8f8-f8f8f8f8f8f8";
-//   // el secure token es para encriptar el mensaje
-
-//   Email.send({
-//     Host: "smtp.gmail.com",
-//     Username: "josa221001@gmail.com",
-//     Password: "hutzzbihuaoyanll",
-//     To: 'josa221001@gmail.com',
-//     From: email,
-//     Subject: "This is the subject",
-//     Body: body
-//   }).then(
-//     message => Swal.fire(
-//       'Gracias!',
-//       'Hemos recibido tu mensaje!',
-//       'success'
-//     )
-//   );
-// });
 
 
 
