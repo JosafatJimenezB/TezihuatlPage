@@ -1,15 +1,13 @@
 # Tezihuatl Holistic Center :hospital: - Proyecto Ingenieria de Software
+<br>
 
-Hola :hand:
-
-Aqui te muestro mi proyecto de ingenieria de software, el cual consiste en una pagina web en la que se puedan agendar citas por medio de la api de whatsapp, ademas de mostrar un poco sobre lo que ofrece el centro.
-
-Ademas de que contendra un admin dashboard en el cual se podran agregar todas las cosas que se necesiten, como citas, usuarios, etc. (en construcción)
-
-## Diseño del website :framed_picture:
-
+## Estudio del caso
 ---
+**Problematica:** Un clinica tenia el problema de que no tenia como mostrar sus servicios a las personas asi como mostrar los testimonios con los que contaba, tambien se hacia el uso de papeleo para el registro que llevaban de los pacientes el cual tendia a perderse facilmente ocasionando varios problemas para todos.
 
+**Solución:**  para este caso se propuso la creacion de una pagina web estatica en la cual se muestra los servicios, testimonios, about y una seccion de contacto con lo que solucionamos la primera parte; se creo un una plataforma con un CRUD para la gestion de los pacientes la cual se guarda en una base de datos.(para mas info visite la [seccion de backend](https://github.com/JosafatJimenezB/tezihuatl_backend))
+## Diseño del website :framed_picture:
+---
 ![](./Views/view.jpg)
 [Diseño UI](./Views/tezihuatl%20UI%20Definitiva.pdf)
 
