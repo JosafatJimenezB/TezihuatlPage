@@ -44,26 +44,15 @@
 
 Para consultar la creación de los mockups de la pagina web consulte el siguiente link [Diseño website](./Views/tezihuatl%20UI%20Definitiva.pdf)
 
-<!-- ## Admin Dashboard
-
-:construction: En construccion :construction:
-
-<br> -->
-
 ## Despliegue :rocket:
 
 ---
 
-El sitio web se encuentra desplegado en dos hosting, uno en github pages con un dominio personal y otro en un servidor de hosting gratuito; se pueden apreciar a continuacion.
+El sitio web se encuentra desplegado en netlify por medio de github, al hacer cambios estos se actualizan automaticamente.
 
 #### Despliegue en Netlify
 
 [Ver despliegue](https://admirable-basbousa-5b8685.netlify.app/#)
-
-#### Despliegue en Hosting
-
-[Ver despliegue](http://www.tezihuatlcenter.ml/)
-
 ## Backend para el dashboard :desktop_computer:
 
 ---
@@ -72,6 +61,7 @@ Para la seccion del backend se encuentra en otro repositorio, el cual se encuent
 
 [soy el link al repo](https://github.com/JosafatJimenezB/Tezihuatl_Backend)
 
+<br>
 ## License
 
 ---
